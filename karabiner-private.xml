@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<root>
+
+	<devicevendordef>
+    	<vendorname>DUCKY</vendorname>
+   	 	<vendorid>0x04d9</vendorid>
+  	</devicevendordef>
+
+  	<deviceproductdef>
+    	<productname>MY_DUCKY</productname>
+   	 	<productid>0x0230</productid>
+  	</deviceproductdef>
+
+	<item>
+		<name> Remap fn to Hyper</name>
+			<identifier>private.fn_to__hyper</identifier>
+			<autogen>__KeyToKey__ KeyCode::FN, KeyCode:: COMMAND_L, 
+				ModifierFlag:: SHIFT_L | ModifierFlag:: CONTROL_L |
+				ModifierFlag:: OPTION_L 
+			</autogen>
+	</item>
+
+	<item>
+		<name> Remap Application to Hyper</name>
+			<identifier>private.application_to__hyper</identifier>
+			<autogen>__KeyToKey__ KeyCode::PC_APPLICATION, KeyCode:: COMMAND_L, 
+				ModifierFlag:: SHIFT_L | ModifierFlag:: CONTROL_L |
+				ModifierFlag:: OPTION_L 
+			</autogen>
+	</item>
+
+	<item>
+	    <name>Swap paragraph and lessthan </name>
+	    <identifier>private.swap_lessthan_and_paragraf</identifier>
+	    <device_only>DeviceVendor::DUCKY, DeviceProduct::MY_DUCKY</device_only>
+	    <autogen>__KeyToKey__ KeyCode::SWEDISH_SECTION, KeyCode::SWEDISH_LESS_THAN</autogen>
+	    <autogen>__KeyToKey__ KeyCode::SWEDISH_LESS_THAN, KeyCode::SWEDISH_SECTION</autogen>
+  	</item> 
+
+
+  	<!-- Alt + key remap for programming -->
+	<!-- 								 -->
+	<item>
+		<name> Remap Option to key F </name>
+			<identifier>private.option_to__f</identifier>
+			<autogen>
+				__KeyToKey__ 
+				KeyCode::F, ModifierFlag::OPTION_R, 
+				KeyCode::KEY_8, ModifierFlag::OPTION_R | ModifierFlag::SHIFT_R 
+			</autogen>
+	</item>
+
+	<item>
+		<name> Remap Option to key G </name>
+			<identifier>private.option_to_g</identifier>
+			<autogen>
+				__KeyToKey__ 
+				KeyCode::G, ModifierFlag::OPTION_R, 
+				KeyCode::KEY_9, ModifierFlag::OPTION_R | ModifierFlag::SHIFT_R 
+			</autogen>
+	</item>
+</root>
