@@ -23,7 +23,6 @@ alias center        move screenSizeX/2-screenSizeX/4;screenSizeY/2-screenSizeY/4
 alias hyper-key cmd;alt;shift;ctrl
 alias less-hyper cmd;alt;ctrl
 
-
 # Resize Bindings
 bind right:alt       resize +10% +0
 bind left:alt        resize -10% +0
@@ -35,8 +34,8 @@ bind up:ctrl;alt     resize +0   +10% bottom-right
 bind down:ctrl;alt   resize +0   -10% bottom-right
 
 # Push Bindings
-bind right:ctrl;cmd  push right bar-resize:screenSizeX/3
-bind left:ctrl;cmd   push left  bar-resize:screenSizeX/3
+bind right:ctrl;cmd  push right bar-resize:screenSizeX/2
+bind left:ctrl;cmd   push left  bar-resize:screenSizeX/2
 
 # Nudge Bindings
 bind right:shift;alt nudge +10% +0
@@ -53,26 +52,16 @@ bind left:ctrl;alt;cmd  throw left  resize
 bind up:ctrl;alt;cmd    throw up    resize
 bind down:ctrl;alt;cmd  throw down  resize
 
-# Focus Bindings
-bind right:cmd    focus right
-bind left:cmd     focus left
-bind up:cmd       focus up
-bind down:cmd     focus down
-bind up:cmd;alt   focus behind
-bind down:cmd;alt focus behind
-
-# Window Hints
-bind a:${hyper-key} hint QWERASDFZXCVBGT
-
 #Fast focus
 bind c:${hyper-key} focus 'Google Chrome'
-bind z:${hyper-key} focus 'iTerm'
+bind z:${hyper-key} focus 'iTerm2'
 bind s:${hyper-key} focus 'Sublime Text 2'
 bind x:${hyper-key} focus 'Xcode'
 bind v:${hyper-key} focus 'Mail'
 bind d:${hyper-key} focus 'Spotify'
 bind f:${hyper-key} focus 'Slack'
 bind w:${hyper-key} focus 'Twitter'
+bind a:${hyper-key} focus 'Simulator'
 
 #Window
 bind i:${less-hyper} ${full}
@@ -83,7 +72,6 @@ bind o:${less-hyper} ${topright}
 bind m:${less-hyper} ${bottomleft}
 bind .:${less-hyper} ${bottomright}
 bind k:${less-hyper} ${center}
-
 
 #Util
 bind 0:${less-hyper} relaunch
